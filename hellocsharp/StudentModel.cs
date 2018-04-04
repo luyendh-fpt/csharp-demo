@@ -34,9 +34,9 @@ namespace HelloCSharp
             }
             return false;
         }
-
-	public void Query(){
-		Console.WriteLine("Query from database.");
-	}
+        // Lấy danh sách student
+    	public voajskdjaskldasjid Query(){
+    		Console.WriteLine("Query from database.");
+    	}
     }
 }
