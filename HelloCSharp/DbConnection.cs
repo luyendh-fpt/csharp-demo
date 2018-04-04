@@ -29,7 +29,7 @@ namespace HelloCSharp
             connection = new MySqlConnection(connectionString);
         }
 
-        private bool OpenConnection()
+        public bool OpenConnection()
         {
             try
             {
@@ -58,7 +58,7 @@ namespace HelloCSharp
         }
 
         //Close connection
-        private bool CloseConnection()
+        public bool CloseConnection()
         {
             try
             {
@@ -72,32 +72,9 @@ namespace HelloCSharp
             }
         }
 
-        public bool Insert(Student student)
-        {
-            string query = "INSERT INTO students (name, rollNumber) VALUES ('" + student.Name + "', '" + student.RollNumber + "')";
-            //open connection
-            if (this.OpenConnection() == true)
-            {
-                try{
-                    //create command and assign the query and connection from the constructor
-                    MySqlCommand cmd = new MySqlCommand(query, connection);
-                    //Execute command
-                    cmd.ExecuteNonQuery();
-                    //close connection
-                    this.CloseConnection();
-                    return true;
-                }catch(Exception ex){
-                    Console.WriteLine("Error " + ex.Message);
-                }
-            }
-            return false;
+        public MySqlConnection GetConnection(){
+            return this.connection;
         }
-                       
-        static void Main(string[] args)
-        {
-            DbConnection p = new DbConnection();
-            Student student = new Student("Tạ Quốc Đạt", "D00123");
-            p.Insert(student);
-        }
+                                      
     }
 }
