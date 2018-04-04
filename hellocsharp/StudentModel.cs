@@ -60,5 +60,8 @@ namespace HelloCSharp
     		Console.WriteLine("Query from database.");
             return list;
     	}
+	
+        public void delete(){
+	}
     }
 }
