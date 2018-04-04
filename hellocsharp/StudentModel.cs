@@ -61,8 +61,15 @@ namespace HelloCSharp
             return list;
     	}
 
-        public void update(){
+        public void update()
+        {
+
+        }
+
+        public void delete()
+        {
             
         }
-    }
+	}
+    
 }
