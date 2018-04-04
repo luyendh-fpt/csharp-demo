@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using MySql.Data.MySqlClient;
 
 namespace HelloCSharp
@@ -34,9 +35,30 @@ namespace HelloCSharp
             }
             return false;
         }
-
-	public void Query(){
-		Console.WriteLine("Query from database.");
-	}
+        // Lấy danh sách student
+        public List<Student> Query(){
+            List<Student> list = new List<Student>();
+            String query = "select * from students;";
+            if(dbConnection.OpenConnection()){
+                try
+                {
+                    MySqlCommand cmd = new MySqlCommand(query, dbConnection.GetConnection());
+                    MySqlDataReader reader =  cmd.ExecuteReader();
+                    while(reader.Read()){
+                        int id = reader.GetInt16("id");
+                        String name = reader.GetString("name");
+                        String rollNumber = reader.GetString("rollNumber");
+                        Student st = new Student(id, name, rollNumber);
+                        list.Add(st);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+            }
+    		Console.WriteLine("Query from database.");
+            return list;
+    	}
     }
 }
