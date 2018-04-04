@@ -1,0 +1,11 @@
+/Users/xuanhung/Projects/hellocsharp/hellocsharp/bin/Debug/netcoreapp2.0/hellocsharp.deps.json
+/Users/xuanhung/Projects/hellocsharp/hellocsharp/bin/Debug/netcoreapp2.0/hellocsharp.runtimeconfig.json
+/Users/xuanhung/Projects/hellocsharp/hellocsharp/bin/Debug/netcoreapp2.0/hellocsharp.runtimeconfig.dev.json
+/Users/xuanhung/Projects/hellocsharp/hellocsharp/bin/Debug/netcoreapp2.0/hellocsharp.dll
+/Users/xuanhung/Projects/hellocsharp/hellocsharp/bin/Debug/netcoreapp2.0/hellocsharp.pdb
+/Users/xuanhung/Projects/hellocsharp/hellocsharp/obj/Debug/netcoreapp2.0/hellocsharp.csprojResolveAssemblyReference.cache
+/Users/xuanhung/Projects/hellocsharp/hellocsharp/obj/Debug/netcoreapp2.0/hellocsharp.csproj.CoreCompileInputs.cache
+/Users/xuanhung/Projects/hellocsharp/hellocsharp/obj/Debug/netcoreapp2.0/hellocsharp.AssemblyInfoInputs.cache
+/Users/xuanhung/Projects/hellocsharp/hellocsharp/obj/Debug/netcoreapp2.0/hellocsharp.AssemblyInfo.cs
+/Users/xuanhung/Projects/hellocsharp/hellocsharp/obj/Debug/netcoreapp2.0/hellocsharp.dll
+/Users/xuanhung/Projects/hellocsharp/hellocsharp/obj/Debug/netcoreapp2.0/hellocsharp.pdb
